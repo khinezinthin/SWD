@@ -1,0 +1,25 @@
+@use './design/btn';
+// sass variable
+$light : rgb(160, 117, 117);
+body{
+    background-color: black;
+    color: $light;
+}
+@import './design/header';
+.title{
+    color: $light;
+}
+.para{
+    color: $light;
+}
+// nesting
+.nav{
+    box-shadow: 0 0 10px black;
+    font-style: italic;
+    .nav-item{
+        background-color: black;
+        .nav-link{
+            color: $light;
+        }
+    }
+}

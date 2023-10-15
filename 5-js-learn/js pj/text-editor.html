@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        /* body{
+            color: red;
+        } */
+        .editor{
+            max-width: 500px;
+            left: 0;
+            right: 0;
+            background-color: #ffffffde;
+            backdrop-filter: blur(5px) contrast(160%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="my-5" id="obj">Place Holder Text</div>
+                <div class="editor position-fixed bottom-0 mx-auto border rounded p-3 my-3">
+                    <div class="mb-3">
+                        <div class="mb-3 d-flex justify-content-between">
+                        <label class="form-label" for="">say something</label>
+                        <div>
+                            <button class="btn btn-outline-dark" id="talkBtn">
+                                <i class="bi bi-volume-up"></i>
+                            </button>
+
+                            <button class="btn btn-outline-dark" id="typeBtn">
+                                <i class="bi bi-mic"></i>
+                            </button>
+                        </div>
+                        </div>
+                        <textarea name="" id="text" cols="30" rows="5" class="form-control"></textarea>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                           <div>
+                            <label for="" class="form-label">Select Font</label>
+                            <select name="" id="selectFont" class="form-select">
+                                <!-- <option value=""Hello></option> -->
+                            </select>
+                           </div> 
+                        </div>
+
+                        <div class="col">
+                            <div>
+                                <label for="" class="form-label">Font Color</label>
+                                <input id="color" type="color" class="form-control form-control-color w-100">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div>
+                                <label for="" class="form-label">Font Size</label>
+                                <input type="range" class="form-range" id="fontSize">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/text-editor.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Neucha&family=Russo+One&display=swap');
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+$body-bg : gray;
+
+$primary : orange;
+$secondary : pink;
+
+$spacer : 2rem;
+
+$link-color : green;
+
+$border-style : dashed;
+
+// font a kone lone ko ye ywal
+$font-family-sans-serif : 'Montserrat', sans-serif;
+
+$display-font-family : 'Russo One', sans-serif;
+
+$headings-font-family : 'Neucha', cursive;
+
+// btn customize
+$btn-padding-x : 25px;
+$btn-padding-y : 15px;
+$btn-font-size : 13px;
+$btn-border-width : 3px;
+$btn-focus-width : bold;
+$btn-transition:              color 0.5s ease-in-out, background-color 0.5s ease-in-out, border-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+
+// modal customize
+$modal-backdrop-bg : white;
+$modal-backdrop-opacity : 0.9;
+
+// progress customize
+$progress-height : 10px;
+
+
+body{
+    height: 3000px;
+}
+.fix-img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: top;
+}
+
+// carousel
+// $carousel-control-color: $secondary;
+// $carousel-control-width: 1;
+// $carousel-indicator-width:           10px;
+// $carousel-indicator-height:          10px;
+// $carousel-indicator-active-bg:       $primary;

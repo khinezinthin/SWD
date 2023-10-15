@@ -1,0 +1,44 @@
+.btn-primary {
+  color: white;
+  background-color: "blue";
+  font-size: 25px;
+  border: none;
+}
+
+.btn-light {
+  color: white;
+  background-color: "white";
+  font-size: 25px;
+  border: none;
+  color: black;
+}
+
+body {
+  background-color: black;
+  color: rgb(160, 117, 117);
+}
+
+.header {
+  color: white;
+}
+
+.title {
+  color: rgb(160, 117, 117);
+}
+
+.para {
+  color: rgb(160, 117, 117);
+}
+
+.nav {
+  box-shadow: 0 0 10px black;
+  font-style: italic;
+}
+.nav .nav-item {
+  background-color: black;
+}
+.nav .nav-item .nav-link {
+  color: rgb(160, 117, 117);
+}
+
+/*# sourceMappingURL=style.css.map */

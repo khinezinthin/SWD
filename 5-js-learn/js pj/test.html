@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        #output{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        /* .key:active,.key.active{
+            background-color: pink;
+        } */
+    </style>
+</head>
+<body>
+    <!-- <div class="position-relative m-5">
+        <img id="output" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="" >
+        <input type="file" id="uploader" class="d-none">
+        <i id="uploaderUI" class="bi bi-camera border text-white bg-secondary rounded-circle p-3 position-absolute translate-middle bottom-0"></i>
+    </div> -->
+
+    <div>
+        <div class="p-5 border border-dark m-5 text-center"><i id="uploaderUI" class="bi bi-upload"></i>Upload Photos</div>
+        <input id="uploader" class="d-none" type="file" name="" id="" multiple>
+        <div id="output"></div>
+    </div>
+
+    <!-- <div class="row border m-5" id="keyboard"></div> -->
+    <script src="js/test.js"></script>
+</body>
+</html>

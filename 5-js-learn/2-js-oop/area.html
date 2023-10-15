@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h3 class="mt-3">Area Calculator</h3>
+        <div class="row border rounded my-3 py-3">
+            <div class="col-12">
+                <div class="col- d-flex">
+                    <h3 class="me-auto">Result : <span id="result"></span></h3> 
+                    <button class="btn btn-outline-primary me-2" id="store">Store</button>
+                    <button class="btn btn-outline-danger" id="clear">Clear</button>
+                </div> <hr>
+                <form action="" id="form">
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label class="form-lable" for="width">Width</label>
+                            <input class="form-control" type="number" id="width" required>
+                        </div>
+                        <div class="col">
+                            <label class="form-lable" for="breadth">Breadth</label>
+                            <input class="form-control" type="number" id="breadth" required>
+                        </div>
+                        <div class="col d-flex">
+                           <button id="calcBtn" class="btn btn-primary w-100 mt-auto">Calculate</button>
+                        </div>
+                    </div>
+                </form>
+
+                <table class="table border">
+                    <thead>
+                        <tr>
+                            <th>Width</th>
+                            <th>Breadth</th>
+                            <th>Area</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lists">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="area.js"></script>
+</body>
+</html>

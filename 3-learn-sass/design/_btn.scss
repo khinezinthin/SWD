@@ -1,0 +1,16 @@
+@mixin btn ($varient){
+    color: white;
+    background-color: $varient;
+    font-size: 25px;
+    border: none;
+}
+
+.btn-primary{
+    @include btn("blue")
+}
+
+.btn-light{
+    @include btn("white");
+    color: black;
+    
+}

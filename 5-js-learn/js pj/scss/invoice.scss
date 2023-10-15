@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&family=Neucha&family=Russo+One&display=swap');
+@import"../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+$font-family-sans-serif : 'Montserrat', sans-serif;
+
+// $border-radius : 0;
+$enable-rounded : false;
+@import"../node_modules/bootstrap/scss/bootstrap.scss";
+
+tr .del-btn{
+    display: none;
+}
+tr:hover .del-btn{
+    display: inline;
+}

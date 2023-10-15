@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/calculator.css">
+    <!-- <style>
+        .keypad{
+            padding: 20px;
+            font-size: 20px;
+        }
+    </style> -->
+</head>
+<body>
+    <!-- <div class="calc">
+        <div class="display-box"> </div>
+
+        <div class="keypad">
+        </div>
+    </div>
+    <script>
+        let keypad = document.querySelector(".keypad");
+        let displayBox = document.querySelector(".display-box");
+        let operator = ["+","-","*","/","="];
+
+        for(let i=0; i<10; i++){
+            keypad.innerHTML += `<button onclick="showDisplay(${i})">${i}</button>`;
+        }
+
+        operator.forEach(x => {
+            if(x === "="){
+                keypad.innerHTML += `<button onclick="calculate()">${x}</button>`
+            }else{
+                keypad.innerHTML += `<button onclick="showDisplay('${x}')">${x}</button>`
+            }
+        });
+
+        let showDisplay = (x) => displayBox.innerText += x;
+
+        let calculate = _ => displayBox.innerText = eval(displayBox.innerText);
+    </script> -->
+
+    <div class="calc">
+        <div class="display">
+            
+        </div>
+
+        <div class="keypad">
+            <table>
+                <tr>
+                    <td>
+                        <div onclick="clearAll()" class="key">AC</div>
+                    </td>
+                    <td>
+                        <div onclick="clearLast()" class="key">C</div>
+                    </td>
+                    <td>
+                        <div onclick="show('%')" class="key">%</div>
+                    </td>
+                    <td>
+                        <div onclick="show('/')" class="key">&#xf7;</div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div onclick="show(7)" class="key">7</div>
+                    </td>
+                    <td>
+                        <div onclick="show(8)" class="key">8</div>
+                    </td>
+                    <td>
+                        <div onclick="show(9)" class="key">9</div>
+                    </td>
+                    <td>
+                        <div onclick="show('*')" class="key">&#xd7;</div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div onclick="show(4)" class="key">4</div>
+                    </td>
+                    <td>
+                        <div onclick="show(5)" class="key">5</div>
+                    </td>
+                    <td>
+                        <div onclick="show(6)" class="key">6</div>
+                    </td>
+                    <td>
+                        <div onclick="show('-')" class="key">&#x2212;</div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div onclick="show(1)" class="key">1</div>
+                    </td>
+                    <td>
+                        <div onclick="show(2)" class="key">2</div>
+                    </td>
+                    <td>
+                        <div onclick="show(3)" class="key">3</div>
+                    </td>
+                    <td>
+                        <div onclick="show('+')" class="key">&#x2b;</div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <div onclick="show(0)" class="key zero">0</div>
+                    </td>
+                    
+                    <td>
+                        <div onclick="show('.')" class="key">.</div>
+                    </td>
+                    <td>
+                        <div onclick="calculate()" class="key">&#x3d;</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="./js/calculator.js"></script>
+</body>
+</html>

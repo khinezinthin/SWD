@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* descendant selector  */
+        .box i{
+            background-color: red;
+        }
+        /* child selector  (>) */
+        .list-group>.list{
+            background-color: yellow;
+        }
+        /* adjacent sibling selector (+) div kat yat kg ta khu ko pl phan */
+        /* div + p {
+            background-color: blue;
+        } */
+        /* general sibling selector (~) div kat yat kg a kone phan */
+        /* div ~ p {
+            background-color: blue;
+        } */
+
+        .greet::before{
+            content: "khine zin thin ";
+            color: red;
+        }
+        .greet::after{
+            content: " ?";
+            color: orange;
+        }
+        .square-box{
+            width: 100px;
+            height: 100px;
+            background-color: grey;
+            position: relative;
+        }
+        .square-box::before{
+            content: "";
+            border: 15px solid white;
+            /* border-top-color: transparent; */
+            border-right-color: rgb(161, 159, 159);
+            border-bottom-color: rgb(161, 159, 159);
+            /* border-left-color: transparent; */
+            width: 30px;
+            box-sizing: border-box;
+
+            /* background-image: linear-gradient(135deg,white,skyblue); */
+            position: absolute;
+        }
+        .border-box{
+            border: 50px solid black;
+            border-top-color: transparent;
+            border-right-color: palevioletred;
+            border-bottom-color: palevioletred;
+            border-left-color: transparent;
+            width: 100px;
+            box-sizing: border-box;
+        }
+        .dialog-box{
+            width: 200px;
+            padding: 20px;
+            background-color: gray;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            position: relative;
+        }
+        .dialog-box::after{
+            content: "";
+            width: 30px;
+            border: 15px solid white;
+            border-top-color: gray;
+            border-top-width: 30px;
+            box-sizing: border-box;
+            position: absolute;
+            bottom: -45px;
+            right: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul class="list-group">
+            <li class="list">one</li>
+            <li class="list">one</li>
+            <li class="list">one</li>
+        </ul>
+        <h1 class="para">Min Ga Lar Par</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, possimus libero quam dolor iure neque quidem veritatis at odio cumque similique quos omnis ullam voluptas labore eveniet accusamus. Quas, ipsa!
+            <i>Khine Zin Thin</i>
+        </p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nobis saepe repellendus reiciendis eaque quis libero nostrum molestias corrupti. Quis enim sit adipisci fugiat necessitatibus maiores! Molestias iure ex a?</p>
+    <p>Facilis deleniti officia atque optio accusantium, rerum accusamus consequuntur obcaecati, est debitis velit nihil blanditiis iste omnis odio exercitationem rem nostrum animi beatae soluta. Dolorum mollitia nemo optio accusantium totam.</p>
+    <p>Quos, deserunt quisquam. Quidem error tenetur inventore labore? Tenetur eius error numquam nisi, dolor vitae! Quaerat quia recusandae ratione eligendi rerum impedit nam expedita reiciendis, nulla ipsam voluptatem, obcaecati nobis.</p>
+    <p>In eius sint repudiandae enim quod ex, quo culpa illo cumque hic exercitationem nostrum vero voluptatem fugit odit officiis maiores. Error temporibus obcaecati tempore, vero quidem cupiditate minus ratione a.</p>
+    <hr>
+
+    <div>
+        <h1 class="greet">Min Ga Lar Par</h1>
+    </div>
+
+    <div class="square-box"></div>
+    <div class="border-box"></div><br><br>
+    <div class="dialog-box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+
+    <br><br><br><br><br><br>
+</body>
+</html>
